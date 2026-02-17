@@ -1,0 +1,35 @@
+[mod_information]
+id="wt.toggle_drone"
+name="Toggle Drone"
+description="MOD_TOGGLE_DRONE_DESC"
+brief="MOD_TOGGLE_DRONE_BRIEF"
+author="WT"
+
+[version]
+version_major=1
+version_minor=0
+version_bugfix=0
+
+[tags]
+TAG_ADDS_EQUIPMENT={"type":"array","value":["SYSTEM_DND_TOGGLE"]}
+
+[links]
+TOGGLE_DRONE_GITHUB={"URL":"https://github.com/1-WT-1/ToggleDrone"}
+
+[configs]
+TDM_SETTINGS={
+	"cycle_order":{
+		"name":"TDM_CYCLE_ORDER",
+		"description":"TDM_CYCLE_ORDER_DESC",
+		"type":"option_button",
+		"store_method":"string",
+		"options":["TDM_ORDER_FIXED","TDM_ORDER_ADAPTIVE"],
+		"default":"TDM_ORDER_FIXED"
+	}
+}
+
+[manifest_definitions]
+manifest_version=2.2
+changelog_path="changelog.txt"
+manifest_url="https://raw.githubusercontent.com/1-WT-1/ToggleDrone/main/Mod.manifest"
+

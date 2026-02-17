@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ToggleDrone/weapons/ToggleDrone.gd" type="Script" id=1]
+[ext_resource path="res://weapons/drone-plant.tscn" type="PackedScene" id=2]
+
+[node name="ToggleDrone" instance=ExtResource( 2 )]
+script = ExtResource( 1 )
+repairReplacementPrice = 500000
+repairFixPrice = 100000
+scanPowerDraw = 50.0
+systemName = "SYSTEM_DND_TOGGLE"
+scanEvery = 2.0
+minEnergyToTarget = 1
+droneFunction = "haul"

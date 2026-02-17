@@ -1,0 +1,7 @@
+[1.0.0]
+1="* Initial release of Toggle Drone."
+1.1="* Added 'Toggle Drone' system (SYSTEM_DND_TOGGLE) capable of switching between Haul and Tug modes."
+1.2="* Added 'Cycle Order' configuration to switch between Fixed (Haul > Tug > Off) and Adaptive (Default > Other > Off) cycling."
+1.3="* Added 'Default Mode' tuning."
+1.4="* Added Velocity Plus 'System Toggle' compatibility."
+
