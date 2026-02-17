@@ -1,3 +1,8 @@
+[1.1.0]
+1="* Added 'Toggle Drone (Harvest)' variant (SYSTEM_DND_HARV_TOGGLE). Uses HevLib mod requirements to load only if 'Industries of Enceladus' is present."
+2="* Implemented dynamic tuning limits to fully support the 800m range of the Harvest drone."
+3="* Added Discord and GitHub links to mod manifest."
+
 [1.0.0]
 1="* Initial release of Toggle Drone."
 1.1="* Added 'Toggle Drone' system (SYSTEM_DND_TOGGLE) capable of switching between Haul and Tug modes."

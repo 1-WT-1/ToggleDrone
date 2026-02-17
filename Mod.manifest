@@ -7,14 +7,15 @@ author="WT"
 
 [version]
 version_major=1
-version_minor=0
+version_minor=1
 version_bugfix=0
 
 [tags]
 TAG_ADDS_EQUIPMENT={"type":"array","value":["SYSTEM_DND_TOGGLE"]}
 
 [links]
-TOGGLE_DRONE_GITHUB={"URL":"https://github.com/1-WT-1/ToggleDrone"}
+HEVLIB_DISCORD={"URL":"https://discord.com/channels/426287934870781952/1473117833511567432"}
+HEVLIB_GITHUB={"URL":"https://github.com/1-WT-1/ToggleDrone"}
 
 [configs]
 TDM_SETTINGS={

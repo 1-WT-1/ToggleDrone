@@ -14,6 +14,9 @@ const TRANSLATIONS = {
 		"TDM_ORDER_FIXED": "Fixed (Haul > Tug > Off)",
 		"TDM_ORDER_ADAPTIVE": "Adaptive (Default First)",
 		"TDM_SETTINGS": "Toggle Drone Settings",
+		"SYSTEM_DND_HARV_TOGGLE": "Adaptive Harvester-class Drone System",
+		"SYSTEM_DND_HARV_TOGGLE_DESC": "A modification of the Titan Heavy Industries Harvester-class system, equipped with an unlocked guidance computer. This heavy-duty system is capable of switching between high-capacity hauling and precision stopping (tug) modes on the fly, utilizing the massive Harvester chassis and power infrastructure.",
+		"SYSTEM_DND_HARV_TOGGLE_SPECS": "Power draw: 120 MW\\nEffective range: 800 m (line of sight)\\nDrone launch capability: 100 dps\\nDrone wet mass: 0.1 kg\\nThrust: 1 kN (per drone)\\nMass: 8,000 kg\\nManufacturer: Custom Aftermarket Modification (THI chassis)",
 		"MOD_TOGGLE_DRONE_DESC": "Adds the Adaptive Nanodrone System to the game, allowing dynamic switching between Haul and Tug modes.",
 		"MOD_TOGGLE_DRONE_BRIEF": "Adds Adaptive Nanodrone System.",
 	}

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRewrite/weapons/HarvHaul.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ToggleDrone/weapons/ToggleDrone.gd" type="Script" id=2]
+
+[node name="SYSTEM_DND_HARV_TOGGLE" instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+repairReplacementPrice = 555000
+repairFixPrice = 80000
+systemName = "SYSTEM_DND_HARV_TOGGLE"
+default_mode_override = ""
+haul_minEnergyToTarget = 1.0
+haul_scanEvery = 2.0
+tug_minEnergyToTarget = 250.0
+tug_scanEvery = 0.5

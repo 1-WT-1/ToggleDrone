@@ -3,7 +3,7 @@ extends Node
 const MOD_PRIORITY = 0
 const MOD_NAME = "Toggle Drone"
 const MOD_VERSION_MAJOR = 1
-const MOD_VERSION_MINOR = 0
+const MOD_VERSION_MINOR = 1
 const MOD_VERSION_BUGFIX = 0
 const MOD_VERSION_METADATA = ""
 const MOD_IS_LIBRARY = false
@@ -13,7 +13,6 @@ var _savedObjects := []
 
 func _init(modLoader = ModLoader):
 	l("Initializing")
-
 	l("Initialized")
 
 func _ready():

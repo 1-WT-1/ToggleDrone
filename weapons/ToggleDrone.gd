@@ -11,6 +11,17 @@ var _mode_display_node: Node2D
 var _cached_hud_label = null
 var _registration_attempted = false
 
+export(String, "haul", "tug") var default_mode_override = ""
+
+# Haul Mode Settings
+export(float) var haul_minEnergyToTarget = 1.0
+export(float) var haul_scanEvery = 2.0
+
+# Tug Mode Settings
+export(float) var tug_minEnergyToTarget = 300.0
+export(float) var tug_scanEvery = 1.0
+
+
 func _ready():
 	if is_queued_for_deletion():
 		return
@@ -117,13 +128,11 @@ func _activateMode(index: int):
 	_currentModeIndex = index
 	var mode = _modes[index]
 	if mode == "haul":
-		#Match SYSTEM_DND_HAUL settings
-		minEnergyToTarget = 1
-		scanEvery = 2.0
+		minEnergyToTarget = haul_minEnergyToTarget
+		scanEvery = haul_scanEvery
 	elif mode == "tug":
-		#Match SYSTEM_DND_TS settings
-		minEnergyToTarget = 300
-		scanEvery = 1.0
+		minEnergyToTarget = tug_minEnergyToTarget
+		scanEvery = tug_scanEvery
 	
 	droneFunction = mode
 	enabled = true
@@ -172,7 +181,7 @@ func getTuneables():
 		"TUNE_RANGE_MIN": {
 			"type": "float",
 			"min": 0,
-			"max": 400,
+			"max": maxDroneDistance / 10,
 			"step": 10,
 			"default": minDroneDistance / 10,
 			"current": getRangeMin(),
@@ -182,7 +191,7 @@ func getTuneables():
 		"TUNE_RANGE_MAX": {
 			"type": "float",
 			"min": 0,
-			"max": 400,
+			"max": maxDroneDistance / 10,
 			"step": 10,
 			"default": maxDroneDistance / 10,
 			"current": getRangeMax(),
@@ -192,7 +201,7 @@ func getTuneables():
 		"TUNE_RANGE_KEEP_AWAY": {
 			"type": "float",
 			"min": 0,
-			"max": 200,
+			"max": maxDroneDistance / 20,
 			"step": 10,
 			"default": haulMinDistance / 10,
 			"current": getMinProximity(),
@@ -202,7 +211,7 @@ func getTuneables():
 		"TUNE_SLOW_ZONE": {
 			"type": "float",
 			"min": 10,
-			"max": 400,
+			"max": maxDroneDistance / 10,
 			"step": 10,
 			"default": haulDistance / 10,
 			"current": getProximity(),
