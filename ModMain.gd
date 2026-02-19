@@ -4,7 +4,7 @@ const MOD_PRIORITY = 0
 const MOD_NAME = "Toggle Drone"
 const MOD_VERSION_MAJOR = 1
 const MOD_VERSION_MINOR = 1
-const MOD_VERSION_BUGFIX = 0
+const MOD_VERSION_BUGFIX = 1
 const MOD_VERSION_METADATA = ""
 const MOD_IS_LIBRARY = false
 
@@ -17,6 +17,14 @@ func _init(modLoader = ModLoader):
 
 func _ready():
 	l("Readying")
+	
+	var pointers = preload("res://HevLib/pointers.gd").new()
+
+	if pointers and pointers.ManifestV2:
+		var mod_data = pointers.ManifestV2.__get_mod_data()
+		if not mod_data.has("hev.IndustriesOfEnceladus"):
+			replaceScene("weapons/ToggleDrone.tscn", "res://ToggleDrone/weapons/ToggleDroneHarvest.tscn")
+	
 	#replaceScene("weapons/ToggleDrone.tscn")
 	l("Ready")
 

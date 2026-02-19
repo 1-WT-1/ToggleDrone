@@ -8,7 +8,7 @@ author="WT"
 [version]
 version_major=1
 version_minor=1
-version_bugfix=0
+version_bugfix=1
 
 [tags]
 TAG_ADDS_EQUIPMENT={"type":"array","value":["SYSTEM_DND_TOGGLE"]}

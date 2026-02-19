@@ -1,3 +1,6 @@
+[1.1.1]
+1="* Fixed crash when loading a save with 'Toggle Drone (Harvest)' equipped if Industries of Enceladus was uninstalled."
+
 [1.1.0]
 1="* Added 'Toggle Drone (Harvest)' variant (SYSTEM_DND_HARV_TOGGLE). Uses HevLib mod requirements to load only if 'Industries of Enceladus' is present."
 2="* Implemented dynamic tuning limits to fully support the 800m range of the Harvest drone."
