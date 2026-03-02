@@ -4,11 +4,12 @@ name="Toggle Drone"
 description="MOD_TOGGLE_DRONE_DESC"
 brief="MOD_TOGGLE_DRONE_BRIEF"
 author="WT"
+credits=["Blaank - initial idea", "__hev for HevLib help and additional features"]
 
 [version]
 version_major=1
 version_minor=1
-version_bugfix=1
+version_bugfix=2
 
 [tags]
 TAG_ADDS_EQUIPMENT={"type":"array","value":["SYSTEM_DND_TOGGLE"]}

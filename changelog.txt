@@ -1,3 +1,8 @@
+[1.1.2]
+1="* Removed manual Industries of Enceladus crash fix from ModMain (now handled by HevLib)."
+2="* Added credits to the mod manifest."
+3="* Merged WEAPONSLOT_ADD into ADD_EQUIPMENT_ITEMS "
+
 [1.1.1]
 1="* Fixed crash when loading a save with 'Toggle Drone (Harvest)' equipped if Industries of Enceladus was uninstalled."
 

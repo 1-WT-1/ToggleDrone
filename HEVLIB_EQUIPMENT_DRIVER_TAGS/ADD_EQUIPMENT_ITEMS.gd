@@ -7,7 +7,16 @@ const TOGGLE_DRONE = {
 	"test_protocol": "drone",
 	"warn_if_electric_below": 50,
 	"slot_type": "HARDPOINT",
-	"equipment_type": "EQUIPMENT_NANODRONES"
+	"equipment_type": "EQUIPMENT_NANODRONES",
+	"weapon_slot": {
+		"path": "res://ToggleDrone/weapons/ToggleDrone.tscn",
+		"data": [
+			{
+				"property": "visible",
+				"value": "false"
+			}
+		]
+	}
 }
 
 const TOGGLE_DRONE_HARVEST = {
@@ -18,5 +27,14 @@ const TOGGLE_DRONE_HARVEST = {
 	"warn_if_electric_below": 120,
 	"slot_type": "HARDPOINT",
 	"equipment_type": "EQUIPMENT_NANODRONES",
-	"mod_requirements": [["hev.IndustriesOfEnceladus"]]
+	"mod_requirements": [["hev.IndustriesOfEnceladus"]],
+	"weapon_slot": {
+		"path": "res://ToggleDrone/weapons/ToggleDroneHarvest.tscn",
+		"data": [
+			{
+				"property": "visible",
+				"value": "false"
+			}
+		]
+	}
 }
