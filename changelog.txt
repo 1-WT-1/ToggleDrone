@@ -1,3 +1,7 @@
+[1.1.3]
+1="* Added MOD_DETAILS.txt"
+2="* Switched to HevLib's translation driver for translations"
+
 [1.1.2]
 1="* Removed manual Industries of Enceladus crash fix from ModMain (now handled by HevLib)."
 2="* Added credits to the mod manifest."

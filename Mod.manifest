@@ -9,7 +9,7 @@ credits=["Blaank - initial idea", "__hev for HevLib help and additional features
 [version]
 version_major=1
 version_minor=1
-version_bugfix=2
+version_bugfix=3
 
 [tags]
 TAG_ADDS_EQUIPMENT={"type":"array","value":["SYSTEM_DND_TOGGLE"]}

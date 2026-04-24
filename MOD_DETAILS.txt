@@ -1,0 +1,15 @@
+;MOD_ID|wt.toggle_drone
+;MOD_NAME|Toggle Drone
+;MOD_ZIP_NAME|ToggleDrone.zip
+
+
+A mod that introduces the [b]Adaptive Nanodrone System[/b], allowing to switch between stopping objects (Tug) and retrieving them (Haul) on the fly.
+
+[u][b]Features:[/b][/u]
+[indent]* [b]Dynamic Mode Switching[/b]: Toggle between Haul and Tug using your slot activation key.[/indent]
+[indent]* [b]Default Mode Tuning[/b]: Set the preferred starting mode for each ship slot via the Tuning menu.[/indent]
+
+[u][b]Configuration:[/b][/u]
+[indent]* [b]Cycle Order[/b]:[/indent]
+[indent][indent]- [b]Fixed[/b]: Always cycles Haul -> Tug -> Off.[/indent][/indent]
+[indent][indent]- [b]Adaptive[/b]: Cycles Default Mode -> Other Mode -> Off.[/indent][/indent]
