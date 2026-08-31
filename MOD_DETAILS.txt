@@ -2,6 +2,7 @@
 ;MOD_NAME|Toggle Drone
 ;MOD_ZIP_NAME|ToggleDrone.zip
 
+[center][b]Toggle Drone[/b][/center]
 
 A mod that introduces the [b]Adaptive Nanodrone System[/b], allowing to switch between stopping objects (Tug) and retrieving them (Haul) on the fly.
 

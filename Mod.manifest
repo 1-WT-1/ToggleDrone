@@ -9,7 +9,7 @@ credits=["Blaank - initial idea", "__hev for HevLib help and additional features
 [version]
 version_major=1
 version_minor=1
-version_bugfix=3
+version_bugfix=4
 
 [tags]
 TAG_ADDS_EQUIPMENT={"type":"array","value":["SYSTEM_DND_TOGGLE"]}
@@ -34,4 +34,6 @@ TDM_SETTINGS={
 manifest_version=2.2
 changelog_path="changelog.txt"
 manifest_url="https://raw.githubusercontent.com/1-WT-1/ToggleDrone/main/Mod.manifest"
+modlet_priority=0
+
 

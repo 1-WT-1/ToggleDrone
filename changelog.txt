@@ -1,3 +1,13 @@
+[1.1.4]
+
+1="* _hev"
+1.1="* Removed redundant weaponslot visibility properties"
+
+2="* WT"
+2.1="* Converted to modlet"
+2.2="* Reduced memory usage of driver files"
+2.3="* Added 3-Clause BSD NON-AI license"
+
 [1.1.3]
 1="* Added MOD_DETAILS.txt"
 2="* Switched to HevLib's translation driver for translations"

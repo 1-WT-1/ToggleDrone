@@ -9,7 +9,7 @@ const TOGGLE_DRONE = {
 	"slot_type": "HARDPOINT",
 	"equipment_type": "EQUIPMENT_NANODRONES",
 	"weapon_slot": {
-		"path": "res://ToggleDrone/weapons/ToggleDrone.tscn",
+		"path": "res://ToggleDrone/weapons/ToggleDrone.tscn"
 	}
 }
 
@@ -23,6 +23,6 @@ const TOGGLE_DRONE_HARVEST = {
 	"equipment_type": "EQUIPMENT_NANODRONES",
 	"mod_requirements": [["hev.IndustriesOfEnceladus"]],
 	"weapon_slot": {
-		"path": "res://ToggleDrone/weapons/ToggleDroneHarvest.tscn",
+		"path": "res://ToggleDrone/weapons/ToggleDroneHarvest.tscn"
 	}
 }

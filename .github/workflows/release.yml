@@ -34,7 +34,11 @@ jobs:
           MAJOR=$(grep -oP 'version_major=\K\d+' "$MANIFEST")
           MINOR=$(grep -oP 'version_minor=\K\d+' "$MANIFEST")
           BUGFIX=$(grep -oP 'version_bugfix=\K\d+' "$MANIFEST")
-          MOD_VERSION="${MAJOR}.${MINOR}.${BUGFIX}"
+          METADATA=$(grep -oP 'version_metadata="\K[^"]+' "$MANIFEST" || echo "")
+          MOD_VERSION="v${MAJOR}.${MINOR}.${BUGFIX}"
+          if [ -n "$METADATA" ]; then
+            MOD_VERSION="${MOD_VERSION}-${METADATA}"
+          fi
           
           # Priority: ;MOD_ZIP_NAME in MOD_DETAILS.txt. Fallback: repo name.
           ZIP_NAME=$(grep -oP ';MOD_ZIP_NAME\|\K.*' "$DETAILS" 2>/dev/null | head -n 1)
@@ -42,14 +46,8 @@ jobs:
             ZIP_NAME="${{ github.event.repository.name }}.zip"
           fi
           
-          # Determine the mod folder name for zip structure.
-          # If manifest is at repo root (MOD_ROOT="."), use the zip name (without .zip) as folder.
-          # Otherwise use the actual directory name.
-          if [ "$MOD_ROOT" = "." ]; then
-            MOD_DIR_NAME="${ZIP_NAME%.zip}"
-          else
-            MOD_DIR_NAME=$(basename "$MOD_ROOT")
-          fi
+          # Folder name inside zip is always derived from MOD_ZIP_NAME (without .zip)
+          MOD_DIR_NAME="${ZIP_NAME%.zip}"
           
           echo "Detected Version: $MOD_VERSION"
           echo "Detected Zip: $ZIP_NAME"
